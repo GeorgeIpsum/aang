@@ -25,10 +25,12 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/img"
+              "src/img",
+              "src/env.js"
             ],
             "styles": [
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "node_modules/mapbox-gl/dist/mapbox-gl.css"
             ],
             "scripts": []
           },

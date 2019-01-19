@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { Map } from 'mapbox-gl';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aang';
+  map: Map;
+
+  @HostListener('window:focus', ['$event'])
+  onFocus(event): any {
+
+  }
+
+  @HostListener('window:blur', ['$event'])
+  onBlur(event: any): void {
+    
+  }
 }
