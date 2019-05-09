@@ -1,0 +1,31 @@
+@import '~src/styles/var';
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $bg;
+  height: $header-height;
+  box-shadow: 
+    0 -10px 30px -15px rgba(200,200,220,1),
+    0 0 10px -10px rgba(200,200,220,0.2);
+  border-radius: 0 0 6px 6px;
+
+  .nav {
+    .link {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      padding-right: 6px;
+      color: white;
+      &:first-child {
+        margin-right: auto;
+        img {
+          padding-right: 6px;
+        }
+        font-size: 24px;
+      }
+    }
+  }
+}

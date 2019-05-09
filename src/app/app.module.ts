@@ -8,12 +8,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParallaxDirective } from './directives/parallax.directive';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import { EnvServiceProver } from './env.service.provider';
-import { EnvService } from './env.service';
+import { Globals } from './globals';
+import { HeaderModule } from  './modules/header-module/header.module';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HomeComponent } from './pages/home/home.component';
+import { RxjsComponent } from './pages/rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    NotFoundComponent,
+    HomeComponent,
+    RxjsComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +28,13 @@ import { EnvService } from './env.service';
     BrowserAnimationsModule,
     NgxMapboxGLModule.withConfig({
       accessToken: 'no stealaroony',
-    })
+    }),
+    HeaderModule
   ],
-  providers: [EnvServiceProver],
+  providers: [
+    EnvServiceProver,
+    Globals,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

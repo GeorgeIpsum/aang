@@ -3,11 +3,20 @@
 @import './var';
 
 body {
+  color: #fff;
   font-family: $font;
   font-weight: $w-reg;
+  background: $bg;
 }
 
-.container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+a, a:focus, button, button:focus, .btn, .btn:focus, *:focus{
+  outline: 0;
+  box-shadow: none;
+}
+
+a:hover {
+  text-decoration: none;
+  .btn {
+    text-decoration: none;
+  }
 }

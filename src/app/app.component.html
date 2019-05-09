@@ -1,13 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="top-container">
-  <div class="container">
-    <h1>coming soon...</h1>
-    <img src="img/appa.jpg">
-    <div class="map" style="height: 800px; width: 100%;">
-      <mgl-map [zoom]="[9.1]" [center]="[-74.5,40]" (load)="map = $event" [style]="'mapbox://styles/mapbox/streets-v9'">
-      </mgl-map>
-    </div>
-  </div>
-</div>
+<app-base-header></app-base-header>
 
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>
