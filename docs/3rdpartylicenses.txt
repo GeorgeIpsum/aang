@@ -682,6 +682,9 @@ MIT
 @angular/router
 MIT
 
+@angular/animations
+MIT
+
 kdbush
 ISC
 ISC License
@@ -721,9 +724,6 @@ THIS SOFTWARE.
 
 
 ngx-mapbox-gl
-MIT
-
-@angular/animations
 MIT
 
 zone.js
